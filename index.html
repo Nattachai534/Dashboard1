@@ -1,0 +1,342 @@
+<svg width="1000" height="1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="1400" fill="#ffffff"/>
+  
+  <!-- Header Section -->
+  <rect width="1000" height="150" fill="url(#headerGradient)"/>
+  <text x="500" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="36" font-weight="bold">📊 Dashboard การประเมิน</text>
+  <text x="500" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" opacity="0.9">รายงานผลการสำรวจและการวิเคราะห์ข้อมูล</text>
+  <text x="500" y="120" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" opacity="0.8">วันที่สร้างรายงาน: 16 กรกฎาคม 2568</text>
+  
+  <!-- Stats Cards Section Background -->
+  <rect x="0" y="150" width="1000" height="160" fill="#f8fafc"/>
+  
+  <!-- Stats Cards -->
+  <!-- Card 1: จำนวนผู้ตอบ -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="180" width="220" height="100" rx="15" fill="white"/>
+    <rect x="50" y="180" width="5" height="100" rx="5" fill="#4facfe"/>
+    <text x="65" y="205" fill="#64748b" font-family="Arial, sans-serif" font-size="14" font-weight="600">👥 จำนวนผู้ตอบ</text>
+    <text x="65" y="235" fill="#1e293b" font-family="Arial, sans-serif" font-size="28" font-weight="700">44</text>
+    <text x="65" y="255" fill="#64748b" font-family="Arial, sans-serif" font-size="12">คน</text>
+  </g>
+  
+  <!-- Card 2: คะแนนเฉลี่ย -->
+  <g filter="url(#shadow)">
+    <rect x="290" y="180" width="220" height="100" rx="15" fill="white"/>
+    <rect x="290" y="180" width="5" height="100" rx="5" fill="#43a047"/>
+    <text x="305" y="205" fill="#64748b" font-family="Arial, sans-serif" font-size="14" font-weight="600">⭐ คะแนนเฉลี่ย</text>
+    <text x="305" y="235" fill="#1e293b" font-family="Arial, sans-serif" font-size="28" font-weight="700">4.72</text>
+    <text x="305" y="255" fill="#64748b" font-family="Arial, sans-serif" font-size="12">จาก 5.00 คะแนน</text>
+  </g>
+  
+  <!-- Card 3: อายุเฉลี่ย -->
+  <g filter="url(#shadow)">
+    <rect x="530" y="180" width="220" height="100" rx="15" fill="white"/>
+    <rect x="530" y="180" width="5" height="100" rx="5" fill="#ff9800"/>
+    <text x="545" y="205" fill="#64748b" font-family="Arial, sans-serif" font-size="14" font-weight="600">📊 อายุเฉลี่ย</text>
+    <text x="545" y="235" fill="#1e293b" font-family="Arial, sans-serif" font-size="28" font-weight="700">37</text>
+    <text x="545" y="255" fill="#64748b" font-family="Arial, sans-serif" font-size="12">ปี (ช่วง 22-59 ปี)</text>
+  </g>
+  
+  <!-- Card 4: หมวดการประเมิน -->
+  <g filter="url(#shadow)">
+    <rect x="770" y="180" width="220" height="100" rx="15" fill="white"/>
+    <rect x="770" y="180" width="5" height="100" rx="5" fill="#17a2b8"/>
+    <text x="785" y="205" fill="#64748b" font-family="Arial, sans-serif" font-size="14" font-weight="600">📋 หมวดการประเมิน</text>
+    <text x="785" y="235" fill="#1e293b" font-family="Arial, sans-serif" font-size="28" font-weight="700">12</text>
+    <text x="785" y="255" fill="#64748b" font-family="Arial, sans-serif" font-size="12">หมวด (47 คำถาม)</text>
+  </g>
+  
+  <!-- Bar Chart Section -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="340" width="580" height="300" rx="15" fill="white"/>
+  </g>
+  <text x="340" y="370" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="18" font-weight="600">📊 คะแนนเฉลี่ยแต่ละหมวด</text>
+  
+  <!-- Bar Chart Grid Lines -->
+  <g stroke="#e2e8f0" stroke-width="1" opacity="0.5">
+    <line x1="80" y1="400" x2="600" y2="400"/>
+    <line x1="80" y1="440" x2="600" y2="440"/>
+    <line x1="80" y1="480" x2="600" y2="480"/>
+    <line x1="80" y1="520" x2="600" y2="520"/>
+    <line x1="80" y1="560" x2="600" y2="560"/>
+    <line x1="80" y1="600" x2="600" y2="600"/>
+  </g>
+  
+  <!-- Y-axis Labels -->
+  <g fill="#64748b" font-family="Arial, sans-serif" font-size="10" text-anchor="end">
+    <text x="75" y="605">0</text>
+    <text x="75" y="565">1</text>
+    <text x="75" y="525">2</text>
+    <text x="75" y="485">3</text>
+    <text x="75" y="445">4</text>
+    <text x="75" y="405">5</text>
+  </g>
+  
+  <!-- Bar Chart Bars -->
+  <!-- หมวด 1: 4.76 -->
+  <rect x="95" y="409" width="35" height="191" rx="3" fill="hsl(200, 70%, 60%)"/>
+  <text x="112.5" y="400" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.76</text>
+  
+  <!-- หมวด 2: 4.74 -->
+  <rect x="135" y="411" width="35" height="189" rx="3" fill="hsl(212, 70%, 60%)"/>
+  <text x="152.5" y="402" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.74</text>
+  
+  <!-- หมวด 3: 4.76 -->
+  <rect x="175" y="409" width="35" height="191" rx="3" fill="hsl(224, 70%, 60%)"/>
+  <text x="192.5" y="400" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.76</text>
+  
+  <!-- หมวด 4: 4.77 -->
+  <rect x="215" y="408" width="35" height="192" rx="3" fill="hsl(236, 70%, 60%)"/>
+  <text x="232.5" y="399" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.77</text>
+  
+  <!-- หมวด 5: 4.70 -->
+  <rect x="255" y="416" width="35" height="184" rx="3" fill="hsl(248, 70%, 60%)"/>
+  <text x="272.5" y="407" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.70</text>
+  
+  <!-- หมวด 6: 4.72 -->
+  <rect x="295" y="414" width="35" height="186" rx="3" fill="hsl(260, 70%, 60%)"/>
+  <text x="312.5" y="405" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.72</text>
+  
+  <!-- หมวด 7: 4.70 -->
+  <rect x="335" y="416" width="35" height="184" rx="3" fill="hsl(272, 70%, 60%)"/>
+  <text x="352.5" y="407" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.70</text>
+  
+  <!-- หมวด 8: 4.73 -->
+  <rect x="375" y="413" width="35" height="187" rx="3" fill="hsl(284, 70%, 60%)"/>
+  <text x="392.5" y="404" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.73</text>
+  
+  <!-- หมวด 9: 4.72 -->
+  <rect x="415" y="414" width="35" height="186" rx="3" fill="hsl(296, 70%, 60%)"/>
+  <text x="432.5" y="405" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.72</text>
+  
+  <!-- หมวด 10: 4.74 -->
+  <rect x="455" y="411" width="35" height="189" rx="3" fill="hsl(308, 70%, 60%)"/>
+  <text x="472.5" y="402" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.74</text>
+  
+  <!-- หมวด 11: 4.73 -->
+  <rect x="495" y="413" width="35" height="187" rx="3" fill="hsl(320, 70%, 60%)"/>
+  <text x="512.5" y="404" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.73</text>
+  
+  <!-- หมวด 12: 4.60 -->
+  <rect x="535" y="424" width="35" height="176" rx="3" fill="hsl(332, 70%, 60%)"/>
+  <text x="552.5" y="415" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="9" font-weight="bold">4.60</text>
+  
+  <!-- X-axis Labels -->
+  <g fill="#64748b" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">
+    <text x="112.5" y="620">หมวด 1</text>
+    <text x="152.5" y="620">หมวด 2</text>
+    <text x="192.5" y="620">หมวด 3</text>
+    <text x="232.5" y="620">หมวด 4</text>
+    <text x="272.5" y="620">หมวด 5</text>
+    <text x="312.5" y="620">หมวด 6</text>
+    <text x="352.5" y="620">หมวด 7</text>
+    <text x="392.5" y="620">หมวด 8</text>
+    <text x="432.5" y="620">หมวด 9</text>
+    <text x="472.5" y="620">หมวด 10</text>
+    <text x="512.5" y="620">หมวด 11</text>
+    <text x="552.5" y="620">หมวด 12</text>
+  </g>
+  
+  <!-- Pie Chart Section -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="340" width="300" height="300" rx="15" fill="white"/>
+  </g>
+  <text x="800" y="370" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="18" font-weight="600">🚻 สัดส่วนเพศ</text>
+  
+  <!-- Pie Chart -->
+  <!-- Female slice (91%) -->
+  <path d="M 800 450 L 800 390 A 60 60 0 1 1 743 520 Z" fill="#ff6b9d"/>
+  <!-- Male slice (9%) -->
+  <path d="M 800 450 L 743 520 A 60 60 0 0 1 800 390 Z" fill="#4ecdc4"/>
+  
+  <!-- Pie Chart Legend -->
+  <rect x="720" y="540" width="15" height="15" fill="#ff6b9d"/>
+  <text x="745" y="552" fill="#1e293b" font-family="Arial, sans-serif" font-size="14">หญิง: 40 คน (91%)</text>
+  
+  <rect x="720" y="565" width="15" height="15" fill="#4ecdc4"/>
+  <text x="745" y="577" fill="#1e293b" font-family="Arial, sans-serif" font-size="14">ชาย: 4 คน (9%)</text>
+  
+  <!-- Score Table Section -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="680" width="900" height="650" rx="15" fill="white"/>
+  </g>
+  <text x="500" y="710" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" font-size="20" font-weight="600">📋 ตารางคะแนนรายละเอียดแต่ละหมวด</text>
+  
+  <!-- Table Header -->
+  <rect x="70" y="730" width="860" height="40" fill="#f1f5f9"/>
+  <g fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+    <text x="140" y="755">หมวดที่</text>
+    <text x="280" y="755">คะแนนเฉลี่ย</text>
+    <text x="420" y="755">คะแนนต่ำสุด</text>
+    <text x="560" y="755">คะแนนสูงสุด</text>
+    <text x="700" y="755">จำนวนคำถาม</text>
+    <text x="840" y="755">ระดับ</text>
+  </g>
+  
+  <!-- Table Rows -->
+  <!-- Row 1: หมวด 1 -->
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="795" font-weight="bold">หมวด 1</text>
+    <text x="280" y="795" font-weight="bold">4.76</text>
+    <text x="420" y="795">3.50</text>
+    <text x="560" y="795">5.00</text>
+    <text x="700" y="795">4</text>
+  </g>
+  <rect x="790" y="782" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="796" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="810" x2="930" y2="810" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 2: หมวด 2 -->
+  <rect x="70" y="810" width="860" height="30" fill="#f8fafc"/>
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="830" font-weight="bold">หมวด 2</text>
+    <text x="280" y="830" font-weight="bold">4.74</text>
+    <text x="420" y="830">3.25</text>
+    <text x="560" y="830">5.00</text>
+    <text x="700" y="830">4</text>
+  </g>
+  <rect x="790" y="817" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="831" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="840" x2="930" y2="840" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 3: หมวด 3 -->
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="860" font-weight="bold">หมวด 3</text>
+    <text x="280" y="860" font-weight="bold">4.76</text>
+    <text x="420" y="860">3.75</text>
+    <text x="560" y="860">5.00</text>
+    <text x="700" y="860">4</text>
+  </g>
+  <rect x="790" y="847" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="861" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="870" x2="930" y2="870" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 4: หมวด 4 -->
+  <rect x="70" y="870" width="860" height="30" fill="#f8fafc"/>
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="890" font-weight="bold">หมวด 4</text>
+    <text x="280" y="890" font-weight="bold">4.77</text>
+    <text x="420" y="890">4.00</text>
+    <text x="560" y="890">5.00</text>
+    <text x="700" y="890">4</text>
+  </g>
+  <rect x="790" y="877" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="891" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="900" x2="930" y2="900" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 5: หมวด 5 -->
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="920" font-weight="bold">หมวด 5</text>
+    <text x="280" y="920" font-weight="bold">4.70</text>
+    <text x="420" y="920">3.50</text>
+    <text x="560" y="920">5.00</text>
+    <text x="700" y="920">4</text>
+  </g>
+  <rect x="790" y="907" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="921" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="930" x2="930" y2="930" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 6: หมวด 6 -->
+  <rect x="70" y="930" width="860" height="30" fill="#f8fafc"/>
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="950" font-weight="bold">หมวด 6</text>
+    <text x="280" y="950" font-weight="bold">4.72</text>
+    <text x="420" y="950">3.25</text>
+    <text x="560" y="950">5.00</text>
+    <text x="700" y="950">4</text>
+  </g>
+  <rect x="790" y="937" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="951" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="960" x2="930" y2="960" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 7: หมวด 7 -->
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="980" font-weight="bold">หมวด 7</text>
+    <text x="280" y="980" font-weight="bold">4.70</text>
+    <text x="420" y="980">3.50</text>
+    <text x="560" y="980">5.00</text>
+    <text x="700" y="980">4</text>
+  </g>
+  <rect x="790" y="967" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="981" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="990" x2="930" y2="990" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 8: หมวด 8 -->
+  <rect x="70" y="990" width="860" height="30" fill="#f8fafc"/>
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="1010" font-weight="bold">หมวด 8</text>
+    <text x="280" y="1010" font-weight="bold">4.73</text>
+    <text x="420" y="1010">3.75</text>
+    <text x="560" y="1010">5.00</text>
+    <text x="700" y="1010">4</text>
+  </g>
+  <rect x="790" y="997" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="1011" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="1020" x2="930" y2="1020" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 9: หมวด 9 -->
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="1040" font-weight="bold">หมวด 9</text>
+    <text x="280" y="1040" font-weight="bold">4.72</text>
+    <text x="420" y="1040">4.00</text>
+    <text x="560" y="1040">5.00</text>
+    <text x="700" y="1040">4</text>
+  </g>
+  <rect x="790" y="1027" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="1041" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="1050" x2="930" y2="1050" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 10: หมวด 10 -->
+  <rect x="70" y="1050" width="860" height="30" fill="#f8fafc"/>
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="1070" font-weight="bold">หมวด 10</text>
+    <text x="280" y="1070" font-weight="bold">4.74</text>
+    <text x="420" y="1070">3.67</text>
+    <text x="560" y="1070">5.00</text>
+    <text x="700" y="1070">3</text>
+  </g>
+  <rect x="790" y="1057" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="1071" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="1080" x2="930" y2="1080" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 11: หมวด 11 -->
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="1100" font-weight="bold">หมวด 11</text>
+    <text x="280" y="1100" font-weight="bold">4.73</text>
+    <text x="420" y="1100">3.75</text>
+    <text x="560" y="1100">5.00</text>
+    <text x="700" y="1100">4</text>
+  </g>
+  <rect x="790" y="1087" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="1101" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  <line x1="70" y1="1110" x2="930" y2="1110" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Row 12: หมวด 12 -->
+  <rect x="70" y="1110" width="860" height="30" fill="#f8fafc"/>
+  <g fill="#1e293b" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="140" y="1130" font-weight="bold">หมวด 12</text>
+    <text x="280" y="1130" font-weight="bold">4.60</text>
+    <text x="420" y="1130">3.00</text>
+    <text x="560" y="1130">5.00</text>
+    <text x="700" y="1130">4</text>
+  </g>
+  <rect x="790" y="1117" width="100" height="20" rx="10" fill="#059669"/>
+  <text x="840" y="1131" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">ดีมาก</text>
+  
+  <!-- Footer -->
+  <rect x="0" y="1350" width="1000" height="50" fill="#1e293b"/>
+  <text x="500" y="1380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">📈 Dashboard สร้างด้วย SVG | สร้างเมื่อ: 16 กรกฎาคม 2568</text>
+</svg>
